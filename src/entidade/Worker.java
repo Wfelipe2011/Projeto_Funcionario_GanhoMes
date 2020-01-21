@@ -60,15 +60,16 @@ public class Worker {
 	public List<ContratoHora> getContracts() {
 		return contracts;
 	}
-	
+	 //public List<ContratoHoraa> setContracts()
+	//NAo esta, porque a lista nao pode ser alterada, mas apenas seu conteudo.
 	public void addContract(ContratoHora contract) {
-		contracts.add(contract);
+		contracts.add(contract);//contract é Lista de contratos.
 	}
 	public void removeContract(ContratoHora contract) {
 		contracts.remove(contract);
 	}
 	
-	public double income(int year, int month) {
+	public double receita(int year, int month) {
 		double soma = baseSalary;
 		Calendar cal = Calendar.getInstance();
 		
